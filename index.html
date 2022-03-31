@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Ken Pon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="titulo">
+        <h1>Jó Ken Pô!</h1>
+    </section>
+    <div class="display">
+        <img src="img/rock-paper-scissors.png" class="logo"><br>
+        Vamos jogar Jó Ken Pô!
+    </div>
+
+    <section class="container">
+        <div id="result"></div>
+        <div class="board">
+            <div class="player1">
+                <span class="pointer">Você &#128073</span><img src="img/smile.png" id="jogador" class="emojo"><img src="img/fist_I.png" id="mao" class="emojo">
+            </div>
+            <div class="player2">
+                <img src="img/fist_r_I.png" id="mao2" class="emojo"><img src="img/smile.png" id="computador" class="emojo"><span class="pointer">&#128072 PC</span>
+            </div>
+        </div>
+    </section>
+    <center>
+        <button class="controles" onclick="pedra(sortear())">
+            <img src="img/closed-fist.png" id="opt" class="opt_pedra">
+            
+        </button>
+        <button class="controles" onclick="papel(sortear())">
+            <img src="img/open-hand.png" id="opt" class="opt_papel">
+        </button>
+        <button class="controles" onclick="tesoura(sortear())">
+            <img src="img/two.png" id="opt" class="opt_tesoura">
+        </button>
+    </center>
+    <script src="script.js"></script>
+</body>
+
+</html>
